@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-bindingSyntax="complex">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+
+		<script>
+				sap.ui.localResources("foodmenuariba");
+				var app = new sap.m.App("myFoodApp", {initialPage:"idMainView1"});
+				var page1 = sap.ui.view({id:"idMainView1", viewName:"foodmenuariba.MainView", type:sap.ui.core.mvc.ViewType.JS});
+				var page2 = sap.ui.view({id:"idMainView2", viewName:"foodmenuariba.AribaLocation", type:sap.ui.core.mvc.ViewType.JS});
+				var page3 = sap.ui.view({id:"idMainView3", viewName:"foodmenuariba.AribaLunch", type:sap.ui.core.mvc.ViewType.XML});
+				var page4 = sap.ui.view({id:"idMainView4", viewName:"foodmenuariba.AribaDinner", type:sap.ui.core.mvc.ViewType.XML});
+				var page5 = sap.ui.view({id:"idMainView5", viewName:"foodmenuariba.EcoWorldLunch", type:sap.ui.core.mvc.ViewType.XML});
+				var page6 = sap.ui.view({id:"idMainView6", viewName:"foodmenuariba.EcoWorldDinner", type:sap.ui.core.mvc.ViewType.XML});
+				var page7 = sap.ui.view({id:"idMainView7", viewName:"foodmenuariba.Breakfast", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page1).addPage(page2).addPage(page3);
+				app.addPage(page4).addPage(page5).addPage(page6).addPage(page7);
+				
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

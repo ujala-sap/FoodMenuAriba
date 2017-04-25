@@ -1,0 +1,58 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:u="sap.ui.unified" xmlns:l="sap.ui.layout.form"
+	controllerName="foodmenuariba.EcoWorldLunch" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Lunch - EcoWorld"
+		  showNavButton="true"
+		  navButtonTap="actBack">
+	<content>
+		<l:SimpleForm editable="true">
+		 <l:content>
+		  <Label text="File Name">
+		  </Label>
+		<VBox>
+		 <u:FileUploader id="idfileUploader" width="50%"
+		    sameFilenameAllowed="false" buttonText="" fileType="CSV"
+		    placeholder="Choose a CSV file" style="Emphasized">
+		</u:FileUploader>
+		<Button text="Upload" press="onUpload"></Button>
+		</VBox>
+		</l:content>
+		</l:SimpleForm>
+
+		<Table id="idTable" items="{/}">
+		<items>
+		    <ColumnListItem>
+			<cells>
+			<Text text="{TYPE}"></Text>
+			<Text text="{MONDAY}"></Text>
+			<Text text="{TUESDAY}"></Text>
+			<Text text="{WEDNESDAY}"></Text>
+			<Text text="{THURSDAY}"></Text>
+			<Text text="{FRIDAY}"></Text>
+			</cells>
+		   </ColumnListItem>
+                </items>
+	        <columns>
+			<Column>
+			<Text text="Food Type"></Text>
+			</Column>
+			<Column>
+			<Text text="Monday"></Text>
+			</Column>
+			<Column>
+			<Text text="Tuesday"></Text>
+			</Column>
+		        <Column>
+			<Text text="Wednesday"></Text>
+			</Column>
+			<Column>
+			<Text text="Thursday"></Text>
+			</Column>
+			<Column>
+			<Text text="Friday"></Text>
+			</Column>
+		</columns>
+		</Table>
+		</content>
+	</Page>
+</core:View>
