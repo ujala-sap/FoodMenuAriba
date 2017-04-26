@@ -23,6 +23,7 @@
 		<items>
 		    <ColumnListItem>
 			<cells>
+			<Text text="{ITEM}"></Text>
 			<Text text="{MONDAY}"></Text>
 			<Text text="{TUESDAY}"></Text>
 			<Text text="{WEDNESDAY}"></Text>
@@ -32,6 +33,9 @@
 		   </ColumnListItem>
                 </items>
 	        <columns>
+	        <Column>
+			<Text text="Item"></Text>
+			</Column>
 			<Column>
 			<Text text="Monday"></Text>
 			</Column>

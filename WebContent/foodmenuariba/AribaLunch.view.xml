@@ -11,8 +11,9 @@
 		  </Label>
 		<VBox>
 		 <u:FileUploader id="idfileUploader" width="50%"
-		    sameFilenameAllowed="false" buttonText="" fileType="CSV"
-		    placeholder="Choose a CSV file" style="Emphasized">
+		    sameFilenameAllowed="false" fileType="CSV"
+		    placeholder="Choose a CSV file" style="Emphasized"
+		    value="AribaLunchMenu.csv">
 		</u:FileUploader>
 		<Button text="Upload" press="onUpload"></Button>
 		</VBox>

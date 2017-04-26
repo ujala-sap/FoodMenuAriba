@@ -61,7 +61,7 @@ sap.ui.controller("foodmenuariba.Breakfast", {
 				reader.onload = function(e) {
 				    var strCSV = e.target.result;
 				    var arrCSV = strCSV.match(/[\w \/ \( \) \# \! \~ \` \$ \% \^ \& \* \-]+(?=,?)/g);
-				    var noOfCols = 5;
+				    var noOfCols = 6;
 
 				    // To ignore the first row which is header
 				    var hdrRow = arrCSV.splice(0, noOfCols);

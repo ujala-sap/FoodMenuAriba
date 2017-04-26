@@ -6,7 +6,7 @@ sap.ui.controller("foodmenuariba.AribaLunch", {
 * @memberOf foodmenuariba.AribaLunch
 */
 //	onInit: function() {
-//
+//		
 //	},
 
 /**
@@ -15,7 +15,7 @@ sap.ui.controller("foodmenuariba.AribaLunch", {
 * @memberOf foodmenuariba.AribaLunch
 */
 //	onBeforeRendering: function() {
-//
+//		
 //	},
 
 /**
@@ -24,7 +24,7 @@ sap.ui.controller("foodmenuariba.AribaLunch", {
 * @memberOf foodmenuariba.AribaLunch
 */
 //	onAfterRendering: function() {
-//
+//		
 //	},
 
 /**
@@ -48,7 +48,8 @@ sap.ui.controller("foodmenuariba.AribaLunch", {
 	 * This function is used to upload the data to the corresponding Food menu Table on load.
 	 */
 		 onUpload: function(e) {
-				
+			 
+		    
 				var fU = this.getView().byId("idfileUploader");
 				var domRef = fU.getFocusDomRef();
 				var file = domRef.files[0];
