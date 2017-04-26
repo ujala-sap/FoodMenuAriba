@@ -33,6 +33,7 @@ title:"Food Menu Sharada Towers",
 info : "Lunch",
 number : "1",
 infoState : "Success",
+icon : "sap-icon://meal",
 press : function() {
 app = sap.ui.getCore().byId("myFoodApp");
 app.to("idMainView3");
@@ -45,6 +46,7 @@ title:"Food Menu Sharada Towers",
 info : "Dinner",
 number : "2",
 infoState : "Success",
+icon : "sap-icon://meal",
 press : function() {
 app = sap.ui.getCore().byId("myFoodApp");
 app.to("idMainView4");
@@ -57,6 +59,7 @@ title:"Food Menu EcoWorld",
 info : "Lunch",
 number : "3",
 infoState : "Success",
+icon : "sap-icon://meal",
 press : function() {
 app = sap.ui.getCore().byId("myFoodApp");
 app.to("idMainView5");
@@ -69,6 +72,7 @@ title:"Food Menu EcoWorld",
 info : "Dinner",
 number : "4",
 infoState : "Success",
+icon : "sap-icon://meal",
 press : function() {
 app = sap.ui.getCore().byId("myFoodApp");
 app.to("idMainView6");
@@ -81,6 +85,7 @@ title:"Food Menu",
 info : "Breakfast",
 number : "5",
 infoState : "Success",
+icon : "sap-icon://nutrition-activity",
 press : function() {
 app = sap.ui.getCore().byId("myFoodApp");
 app.to("idMainView7");

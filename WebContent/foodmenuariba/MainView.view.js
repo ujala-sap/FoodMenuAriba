@@ -33,6 +33,7 @@ sap.ui.jsview("foodmenuariba.MainView", {
 			info : "Aliba Food Menu",
 			number : "1",
 			infoState : "Success",
+			icon: "sap-icon://fridge",
 			press : function() {
 				app.to("idMainView2");
 			} 

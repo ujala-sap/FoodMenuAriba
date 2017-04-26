@@ -17,16 +17,17 @@
   	</login-config>
   	
 <security-constraint>
-	<web-resource-collection>
-      <web-resource-name>Protected Area</web-resource-name>
-      <url-pattern>/protected/*</url-pattern>
-    </web-resource-collection>
-    <auth-constraint>
-      <role-name>Everyone</role-name>
-    </auth-constraint>
-  </security-constraint>
-  <security-role>
-    <description>All SAP Cloud Platform users</description>
+  <web-resource-collection>
+    <web-resource-name>Protected Area</web-resource-name>
+    <url-pattern>/index.html</url-pattern>
+  </web-resource-collection>
+  <auth-constraint>
+    <!-- Role Everyone will not be assignable -->
     <role-name>Everyone</role-name>
-  </security-role>
+    </auth-constraint>
+</security-constraint>
+<security-role>
+  <description>All SAP Cloud Platform users</description>
+  <role-name>Everyone</role-name>
+</security-role>
 </web-app>
